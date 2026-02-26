@@ -1,19 +1,19 @@
 import { Page } from "@playwright/test";
-import SignInPage from "./signIn.page";
+import LoginPage from "./login.page";
 import dotenv from "dotenv";
 
 dotenv.config();
 
 export default class BasePage {
   readonly page: Page;
-  readonly signin: SignInPage;
+  readonly login: LoginPage;
 
   constructor(page: Page) {
     this.page = page;
-    this.signin = new SignInPage(page);
+    this.login = new LoginPage(page);
   }
 
-  async goTo() {
+  async irPara() {
     await this.page.goto(process.env.BASE_URL as string);
   }
 }
