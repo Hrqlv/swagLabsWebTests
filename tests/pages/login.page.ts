@@ -7,8 +7,19 @@ export default class LoginPage {
         this.page = page;
     }
 
-    async test() {
-        
+    async preencherCampos(nome = '', senha = '') {
+        await this.page.locator('input[id="user-name"]').fill(nome)
+        await this.page.waitForTimeout(1500)
+        await this.page.locator('input[id="password"]').fill(senha)
+        await this.page.waitForTimeout(1500)
+    }
+
+    async btnLogin() {
+        await this.page.locator('input[id="login-button"]').click()
+    }
+
+    async mensagemErro(texto = '') {
+        await expect(this.page.locator('div[class="error-message-container error"] h3').filter({ hasText: texto })).toBeVisible({ timeout: 3000 })
     }
 
 }
