@@ -1,6 +1,6 @@
 import { expect, type Page } from '@playwright/test';
 
-export default class SignInPage {
+export default class LoginPage {
     readonly page: Page;
 
     constructor(page: Page) {
