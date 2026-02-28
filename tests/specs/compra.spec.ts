@@ -40,8 +40,36 @@ test.describe('Fluxo de compra @COMPRA @SWAGLABS', async () => {
     })
 
     test('[Cenário 3] Remover produto que já está adicionado', async ({ page }) => {
-      await test.step('[Caso de teste 1] ', async () => {
-       
+      await test.step('[Caso de teste 1] Escolher algum produto e clicar para adicionar ao carrinho', async () => {
+        await basePage.compra.btnAdicionarProduto(3)
+      })
+
+      await test.step('[Caso de teste 2] Acessar mais detalhes do produtos após adicionado', async () => {
+        await basePage.compra.acessarMaisDetalhes(3)
+      })
+      
+      await test.step('[Caso de teste 3] Remover o produto caso queira', async () => {
+        await basePage.compra.btnRemoverDetalhesProduto()
+      })
+
+      await test.step('[Caso de teste 4] Validar o produto pós removido', async () => {
+        await basePage.compra.validarProdutoVazio()
+      })
+
+      await test.step('[Caso de teste 5] Voltar para lista de produtos', async () => {
+        await basePage.compra.btnVoltarListaProdutos()
+      })
+
+      await test.step('[Caso de teste 6] Escolher algum produto e clicar para adicionar ao carrinho', async () => {
+        await basePage.compra.btnAdicionarProduto(5)
+      })
+
+      await test.step('[Caso de teste 7] Remover o produto caso queira', async () => {
+        await basePage.compra.btnRemoverProdutoPaginaInicial()
+      })
+      
+      await test.step('[Caso de teste 8] Validar o produto pós removido', async () => {
+        await basePage.compra.validarProdutoVazio()
       })
     })
   })
