@@ -35,7 +35,7 @@ test.describe('Fluxo de compra @COMPRA @SWAGLABS', async () => {
       })
 
       await test.step('[Caso de teste 3] Validar os detalhes do produto', async () => {
-       await basePage.compra.validarDetalhesProduto()
+       await basePage.compra.validarDetalhesProdutoPaginaInicial()
       })
     })
 
@@ -70,6 +70,28 @@ test.describe('Fluxo de compra @COMPRA @SWAGLABS', async () => {
       
       await test.step('[Caso de teste 8] Validar o produto pós removido', async () => {
         await basePage.compra.validarProdutoVazio()
+      })
+    })
+
+    test('[Cenário 4] Acessar o carrinho de compra', async ({ page }) => {
+      await test.step('[Caso de teste 1] Escolher algum produto e clicar para adicionar ao carrinho', async () => {
+        await basePage.compra.btnAdicionarProduto(3)
+      })
+
+      await test.step('[Caso de teste 2] Acessar o carrinho de compra', async () => {
+        await basePage.compra.acessarCarrinhoCompra()
+      })
+
+      await test.step('[Caso de teste 3] Validar os detalhes da compra', async () => {
+        await basePage.compra.validarDetalhesProdutoCarrinho()
+      })
+
+      await test.step('[Caso de teste 4] Remover o produto caso queira', async () => {
+        await basePage.compra.btnRemoverProdutoPaginaInicial()
+      })
+
+      await test.step('[Caso de teste 5] Continuar comprando', async () => {
+        await basePage.compra.btnContinuarComprando()
       })
     })
   })
