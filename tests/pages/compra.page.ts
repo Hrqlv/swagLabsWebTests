@@ -26,6 +26,18 @@ export default class CompraPage {
     async btnContinuarComprando() {
         await this.page.locator('button[id="continue-shopping"]').click()
     }
+
+    async btnCheckout() {
+        await this.page.locator('button[id="checkout"]').click()
+    }
+
+    async btnContinuar() {
+        await this.page.locator('input[id="continue"]').click()
+    }
+
+    async btnFinalizar() {
+        await this.page.locator('button[id="finish"]').click()
+    }
    
     async acessarMaisDetalhes(indice: number) {
         await this.page.locator('div[class="inventory_item_name "]').nth(indice).click({ force: true })
@@ -53,5 +65,19 @@ export default class CompraPage {
         await expect(this.page.locator('div[data-test="inventory-item-name"]')).toBeVisible({ timeout: 3000 })
         await expect(this.page.locator('div[data-test="inventory-item-desc"]')).toBeVisible({ timeout: 3000 })
         await expect(this.page.locator('div[data-test="inventory-item-price"]')).toBeVisible({ timeout: 3000 })
+    }
+
+    async validarMensagemFinal() {
+        await expect(this.page.locator('h2[data-test="complete-header"]').filter({ hasText: 'Thank you for your order!' })).toBeVisible({ timeout: 3000 })
+        await expect(this.page.locator('div[data-test="complete-text"]').filter({ hasText: 'Your order has been dispatched, and will arrive just as fast as the pony can get there!' })).toBeVisible({ timeout: 3000 })
+    }
+
+    async formPreencherSuasInfo(primeiroNome = '', segundoNome = '', codigoPostal = '') {
+        await this.page.locator('input[id="first-name"]').fill(primeiroNome)
+        await this.page.waitForTimeout(1500)
+        await this.page.locator('input[id="last-name"]').fill(segundoNome)
+        await this.page.waitForTimeout(1500)
+        await this.page.locator('input[id="postal-code"]').fill(codigoPostal)
+        await this.page.waitForTimeout(1500)
     }
 }
