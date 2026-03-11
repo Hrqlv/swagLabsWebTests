@@ -72,6 +72,10 @@ export default class CompraPage {
         await expect(this.page.locator('div[data-test="complete-text"]').filter({ hasText: 'Your order has been dispatched, and will arrive just as fast as the pony can get there!' })).toBeVisible({ timeout: 3000 })
     }
 
+    async validarMensagemErroInfoComprador() {
+        const camposComErro = this.page.locator('input[class*="input_error"]')
+        await expect(camposComErro).toHaveCount(3);
+    }
 
     async validarFiltro() {
         await expect(this.page.locator('div[data-test="inventory-list"]')).toBeVisible({ timeout: 3000 })

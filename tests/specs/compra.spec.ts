@@ -142,7 +142,7 @@ test.describe('Fluxo de compra @COMPRA @SWAGLABS', async () => {
     })
   }) 
 
-    test.describe('[Objetivo do teste] Filtrar produto', async () => {
+  test.describe('[Objetivo do teste] Filtrar produto', async () => {
      test('[Cenário 1] Filtrar por categoria "Price (low to high)"', async ({ page }) => {
       await test.step('[Caso de teste 1] Clicar no filtro e selecionar qual categoria deseja', async () => {
         await basePage.compra.filtrarCategoria('Price (low to high)')
@@ -183,4 +183,24 @@ test.describe('Fluxo de compra @COMPRA @SWAGLABS', async () => {
       })
     })
   }) 
+
+  test.describe('[Objetivo do teste] Fluxo de erro de "Informaçoes do comprador"', async () => {
+    test.beforeEach(async ({ page }) => {
+      await basePage.compra.btnAdicionarProduto(3)
+      await basePage.compra.validarQtdProdutoAdicionado()
+      await basePage.compra.acessarCarrinhoCompra()
+      await basePage.compra.validarDetalhesProdutoCarrinho()
+      await basePage.compra.btnCheckout()
+  })
+
+  test('[Cenário 1] Informaçoes com campos vazios', async ({ page }) => {
+      await test.step('[Caso de teste 1] Continuar para revisão da compra', async () => {
+        await basePage.compra.btnContinuar()
+      })
+
+      await test.step('[Caso de teste 2] Validar as mensagens de erro', async () => {
+        await basePage.compra.validarMensagemErroInfoComprador()
+      })
+    })
+  })
 })
