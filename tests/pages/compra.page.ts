@@ -72,6 +72,11 @@ export default class CompraPage {
         await expect(this.page.locator('div[data-test="complete-text"]').filter({ hasText: 'Your order has been dispatched, and will arrive just as fast as the pony can get there!' })).toBeVisible({ timeout: 3000 })
     }
 
+
+    async validarFiltro() {
+        await expect(this.page.locator('div[data-test="inventory-list"]')).toBeVisible({ timeout: 3000 })
+    }
+
     async formPreencherSuasInfo(primeiroNome = '', segundoNome = '', codigoPostal = '') {
         await this.page.locator('input[id="first-name"]').fill(primeiroNome)
         await this.page.waitForTimeout(1500)
@@ -80,4 +85,9 @@ export default class CompraPage {
         await this.page.locator('input[id="postal-code"]').fill(codigoPostal)
         await this.page.waitForTimeout(1500)
     }
+
+   async filtrarCategoria(value: string) {
+        await this.page.selectOption('[data-test="product-sort-container"]', { label: value });
+        await this.page.waitForLoadState('networkidle');
+}
 }
