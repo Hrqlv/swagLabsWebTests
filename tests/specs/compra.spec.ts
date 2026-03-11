@@ -141,4 +141,46 @@ test.describe('Fluxo de compra @COMPRA @SWAGLABS', async () => {
       })
     })
   }) 
+
+    test.describe('[Objetivo do teste] Filtrar produto', async () => {
+     test('[Cenário 1] Filtrar por categoria "Price (low to high)"', async ({ page }) => {
+      await test.step('[Caso de teste 1] Clicar no filtro e selecionar qual categoria deseja', async () => {
+        await basePage.compra.filtrarCategoria('Price (low to high)')
+      })
+
+      await test.step('[Caso de teste 2] Validar a categoria que foi filtrado', async () => {
+        await basePage.compra.validarFiltro()
+      })
+    })
+
+     test('[Cenário 2] Filtrar por categoria "Price (high to low)"', async ({ page }) => {
+      await test.step('[Caso de teste 1] Clicar no filtro e selecionar qual categoria deseja', async () => {
+        await basePage.compra.filtrarCategoria('Price (high to low)')
+      })
+
+      await test.step('[Caso de teste 2] Validar a categoria que foi filtrado', async () => {
+        await basePage.compra.validarFiltro()
+      })
+    })
+
+    test('[Cenário 3] Filtrar por categoria "Name (Z to A)"', async ({ page }) => {
+      await test.step('[Caso de teste 1] Clicar no filtro e selecionar qual categoria deseja', async () => {
+        await basePage.compra.filtrarCategoria('Name (Z to A)')
+      })
+
+      await test.step('[Caso de teste 2] Validar a categoria que foi filtrado', async () => {
+        await basePage.compra.validarFiltro()
+      })
+    })
+
+    test('[Cenário 4] Filtrar por categoria "Name (A to Z)"', async ({ page }) => {
+      await test.step('[Caso de teste 1] Clicar no filtro e selecionar qual categoria deseja', async () => {
+        await basePage.compra.filtrarCategoria('Name (A to Z)')
+      })
+
+      await test.step('[Caso de teste 2] Validar a categoria que foi filtrado', async () => {
+        await basePage.compra.validarFiltro()
+      })
+    })
+  }) 
 })
