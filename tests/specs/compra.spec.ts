@@ -198,7 +198,7 @@ test.describe('Fluxo de compra @COMPRA @SWAGLABS', async () => {
         await basePage.compra.btnContinuar()
       })
 
-      await test.step('[Caso de teste 2] Validar as mensagens de erro', async () => {
+      await test.step('[Caso de teste 2] Validar a mensagem de erro', async () => {
         await basePage.compra.validarMensagemErroInfoComprador()
       })
     })

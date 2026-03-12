@@ -2,9 +2,11 @@ import { expect, type Page } from '@playwright/test';
 
 export default class CompraPage {
     readonly page: Page;
+    readonly btnCarrinho: string
 
     constructor(page: Page) {
         this.page = page;
+        this.btnCarrinho = 'a[data-test="shopping-cart-link"]'
     }
 
     async btnAdicionarProduto(indice: number) {
@@ -44,7 +46,7 @@ export default class CompraPage {
     }
 
     async acessarCarrinhoCompra() {
-        await this.page.locator('a[data-test="shopping-cart-link"]').click()
+        await this.page.locator(this.btnCarrinho).click()
     }
 
     async validarQtdProdutoAdicionado() {
@@ -52,7 +54,7 @@ export default class CompraPage {
     }
 
     async validarProdutoVazio() {
-        await expect(this.page.locator('a[data-test="shopping-cart-link"]')).toBeVisible({ timeout: 3000 })
+        await expect(this.page.locator(this.btnCarrinho)).toBeVisible({ timeout: 3000 })
     }
 
     async validarDetalhesProdutoPaginaInicial() {
@@ -91,7 +93,7 @@ export default class CompraPage {
     }
 
    async filtrarCategoria(value: string) {
-        await this.page.selectOption('[data-test="product-sort-container"]', { label: value });
-        await this.page.waitForLoadState('networkidle');
-}
+        await this.page.selectOption('select[data-test="product-sort-container"]', { label: value });
+        await this.page.waitForTimeout(1500);
+    }
 }
