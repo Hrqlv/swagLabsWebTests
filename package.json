@@ -12,6 +12,7 @@
     "chrome": "npx playwright test --project=chrome",
     "webkit": "npx playwright test --project=webkit",
     "firefox": "npx playwright test --project=firefox",
+    "mobile": "npx playwright test --project=mobileChrome",
     "allure": "cp -r allure-report/history allure-results/ && allure generate allure-results --clean && allure open ./allure-report",
     "allure_clean": "rm -rf allure-results/*"
   },
