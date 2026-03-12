@@ -14,7 +14,8 @@
     "firefox": "npx playwright test --project=firefox",
     "mobile": "npx playwright test --project=mobileChrome",
     "allure": "cp -r allure-report/history allure-results/ && allure generate allure-results --clean && allure open ./allure-report",
-    "allure_clean": "rm -rf allure-results/*"
+    "allure_clean": "rm -rf allure-results/*",
+    "ci": "npx playwright test --project=chrome --grep \"@CI\""
   },
   "dependencies": {
     "dotenv": "^16.6.1",

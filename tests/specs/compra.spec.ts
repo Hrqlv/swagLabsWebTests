@@ -6,7 +6,7 @@ import { dadosCheckout } from '../../support/helpers';
 let basePage:any
 let comprador = dadosCheckout()
 
-test.describe('Fluxo de compra @COMPRA @SWAGLABS', async () => {
+test.describe('Fluxo de compra @COMPRA @SWAGLABS @CI', async () => {
   test.beforeEach(async ({ page }) => {
     basePage = new BasePage(page);
     await basePage.irPara()

@@ -1,12 +1,14 @@
 import { defineConfig, devices } from '@playwright/test';
 
+const envCI = process.env.CI?.toLocaleLowerCase() === 'true';
+
 export default defineConfig({
   timeout: 100000,
   testDir: './tests',
   fullyParallel: true,
   forbidOnly: !!process.env.CI,
-  retries: process.env.CI ? 2 : 0,
-  workers: process.env.CI ? 3 : 1,
+  retries: envCI ? 2 : 0,
+  workers: envCI ? 3 : 0,
   reporter: [['list', { printSteps: true }], ['html'],  ['pwmochawesome', { outputJSON: true, outputFileName: 'result.json' }], ['allure-playwright', { outputFolder: 'allure-results' }]],
   
   use: {

@@ -4,7 +4,7 @@ import { login } from '../../fixtures/data';
 
 let basePage:any
 
-test.describe('Fluxo de login @LOGIN @SWAGLABS', async () => {
+test.describe('Fluxo de login @LOGIN @SWAGLABS @CI', async () => {
   test.beforeEach(async ({ page }) => {
     basePage = new BasePage(page);
     await basePage.irPara()
