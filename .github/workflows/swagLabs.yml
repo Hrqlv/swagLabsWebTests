@@ -1,0 +1,32 @@
+name: SwagLabs Tests
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    env:
+      BASE_URL: https://www.saucedemo.com/
+
+    steps:
+      - name: Checkout do código
+        uses: actions/checkout@v4
+
+      - name: Instalar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Instalar dependências
+        run: npm run ci
+
+      - name: Instalar browsers do Playwright
+        run: npx playwright install --with-deps
+
+      - name: Rodar testes
+        run: npm run tests
