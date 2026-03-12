@@ -1,0 +1,161 @@
+{
+    "stats": {
+        "suites": 9,
+        "tests": 42,
+        "passes": 0,
+        "pending": 0,
+        "failures": 0,
+        "start": "Thu Mar 12 2026 10:20:33 GMT-0300 (Horário Padrão de Brasília)",
+        "end": "Thu Mar 12 2026 10:24:15 GMT-0300 (Horário Padrão de Brasília)",
+        "duration": 209103,
+        "testsRegistered": 42,
+        "passPercent": 0,
+        "pendingPercent": 0,
+        "other": 0,
+        "hasOther": false,
+        "skipped": 0,
+        "hasSkipped": false
+    },
+    "results": [
+        {
+            "uuid": "",
+            "title": "",
+            "fullFile": "",
+            "file": "",
+            "beforeHooks": [],
+            "afterHooks": [],
+            "tests": [],
+            "suites": [
+                {
+                    "uuid": "0dce2884-871e-409f-ac14-90da6d2275d3",
+                    "title": "Fluxo de compra @COMPRA @SWAGLABS",
+                    "fullFile": "D:\\Projetos - Automaçao QA\\swagLabsWebTests\\tests\\specs\\compra.spec.ts",
+                    "file": "specs\\compra.spec.ts",
+                    "beforeHooks": [],
+                    "afterHooks": [],
+                    "tests": [],
+                    "suites": [],
+                    "passes": [],
+                    "failures": [],
+                    "pending": [],
+                    "skipped": [],
+                    "duration": 0,
+                    "root": false,
+                    "rootEmpty": false,
+                    "_timeout": 0
+                },
+                {
+                    "uuid": "06640ba9-55e2-482c-83d4-2e4bd5cf0b00",
+                    "title": "Fluxo de login @LOGIN @SWAGLABS",
+                    "fullFile": "D:\\Projetos - Automaçao QA\\swagLabsWebTests\\tests\\specs\\login.spec.ts",
+                    "file": "specs\\login.spec.ts",
+                    "beforeHooks": [],
+                    "afterHooks": [],
+                    "tests": [],
+                    "suites": [],
+                    "passes": [],
+                    "failures": [],
+                    "pending": [],
+                    "skipped": [],
+                    "duration": 0,
+                    "root": false,
+                    "rootEmpty": false,
+                    "_timeout": 0
+                },
+                {
+                    "uuid": "c207461f-1bb3-43b9-8044-efa484b09e3e",
+                    "title": "Fluxo de compra @COMPRA @SWAGLABS",
+                    "fullFile": "D:\\Projetos - Automaçao QA\\swagLabsWebTests\\tests\\specs\\compra.spec.ts",
+                    "file": "specs\\compra.spec.ts",
+                    "beforeHooks": [],
+                    "afterHooks": [],
+                    "tests": [],
+                    "suites": [],
+                    "passes": [],
+                    "failures": [],
+                    "pending": [],
+                    "skipped": [],
+                    "duration": 0,
+                    "root": false,
+                    "rootEmpty": false,
+                    "_timeout": 0
+                },
+                {
+                    "uuid": "950f2fc3-7fd2-4f89-8ad9-c267f62ed0df",
+                    "title": "Fluxo de login @LOGIN @SWAGLABS",
+                    "fullFile": "D:\\Projetos - Automaçao QA\\swagLabsWebTests\\tests\\specs\\login.spec.ts",
+                    "file": "specs\\login.spec.ts",
+                    "beforeHooks": [],
+                    "afterHooks": [],
+                    "tests": [],
+                    "suites": [],
+                    "passes": [],
+                    "failures": [],
+                    "pending": [],
+                    "skipped": [],
+                    "duration": 0,
+                    "root": false,
+                    "rootEmpty": false,
+                    "_timeout": 0
+                },
+                {
+                    "uuid": "386f7f77-295f-4beb-8314-dc51d3d5355c",
+                    "title": "Fluxo de compra @COMPRA @SWAGLABS",
+                    "fullFile": "D:\\Projetos - Automaçao QA\\swagLabsWebTests\\tests\\specs\\compra.spec.ts",
+                    "file": "specs\\compra.spec.ts",
+                    "beforeHooks": [],
+                    "afterHooks": [],
+                    "tests": [],
+                    "suites": [],
+                    "passes": [],
+                    "failures": [],
+                    "pending": [],
+                    "skipped": [],
+                    "duration": 0,
+                    "root": false,
+                    "rootEmpty": false,
+                    "_timeout": 0
+                },
+                {
+                    "uuid": "f7af7ec3-78a1-4e8b-98d2-39fa00f2048d",
+                    "title": "Fluxo de login @LOGIN @SWAGLABS",
+                    "fullFile": "D:\\Projetos - Automaçao QA\\swagLabsWebTests\\tests\\specs\\login.spec.ts",
+                    "file": "specs\\login.spec.ts",
+                    "beforeHooks": [],
+                    "afterHooks": [],
+                    "tests": [],
+                    "suites": [],
+                    "passes": [],
+                    "failures": [],
+                    "pending": [],
+                    "skipped": [],
+                    "duration": 0,
+                    "root": false,
+                    "rootEmpty": false,
+                    "_timeout": 0
+                }
+            ],
+            "passes": [],
+            "failures": [],
+            "pending": [],
+            "skipped": [],
+            "duration": 0,
+            "root": true,
+            "rootEmpty": true,
+            "_timeout": 0
+        }
+    ],
+    "meta": {
+        "mochawesome": {
+            "options": {},
+            "version": "7.1.3"
+        },
+        "marge": {
+            "options": {},
+            "version": "6.2.0"
+        },
+        "mocha": {
+            "version": "7.1.3"
+        }
+    }
+}
