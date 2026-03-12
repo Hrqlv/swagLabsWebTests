@@ -31,26 +31,10 @@ jobs:
       - name: Rodar testes
         run: npm run tests
 
-      - name: Instalar Allure CLI
-        if: always()
-        run: npm install -g allure-commandline --save-dev
-
-      - name: Gerar Allure Report
-        if: always()
-        run: allure generate allure-results --clean -o allure-report
-
       - name: Upload relatório Playwright
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: playwright-report
           path: playwright-report/
-          retention-days: 7
-
-      - name: Upload Allure Report
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: allure-report
-          path: allure-report/
-          retention-days: 7
+          retention-days: 1
