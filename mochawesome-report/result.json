@@ -1,14 +1,14 @@
 {
     "stats": {
         "suites": 1,
-        "tests": 1,
+        "tests": 4,
         "passes": 0,
         "pending": 0,
         "failures": 0,
-        "start": "Thu Mar 12 2026 10:53:06 GMT-0300 (Horário Padrão de Brasília)",
-        "end": "Thu Mar 12 2026 10:53:12 GMT-0300 (Horário Padrão de Brasília)",
-        "duration": 4140,
-        "testsRegistered": 1,
+        "start": "Fri Mar 13 2026 09:47:23 GMT-0300 (Horário Padrão de Brasília)",
+        "end": "Fri Mar 13 2026 09:47:27 GMT-0300 (Horário Padrão de Brasília)",
+        "duration": 0,
+        "testsRegistered": 4,
         "passPercent": 0,
         "pendingPercent": 0,
         "other": 0,
@@ -27,8 +27,8 @@
             "tests": [],
             "suites": [
                 {
-                    "uuid": "9cf86a70-f410-4b57-a422-0068a574a9af",
-                    "title": "Fluxo de login @LOGIN @SWAGLABS",
+                    "uuid": "5b817b9e-3c3d-4e47-aa4c-27d8393e86f6",
+                    "title": "Fluxo de login @LOGIN @SWAGLABS @CI",
                     "fullFile": "D:\\Projetos - Automaçao QA\\swagLabsWebTests\\tests\\specs\\login.spec.ts",
                     "file": "specs\\login.spec.ts",
                     "beforeHooks": [],
