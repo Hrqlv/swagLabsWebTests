@@ -70,8 +70,8 @@ npm run chrome
 ```
 #### Opções:
 - 🌐 chrome
-- 🦊 webkit
-- 🧭 firefox
+- 🦊 firefox
+- 🧭 webkit
 
 ### 🏷️ Executar testes por tag
 ```
@@ -83,7 +83,7 @@ npm run tests -- --grep @COMPRA
 - @COMPRA - Executa testes com a tag COMPRA
 - @LOGIN - Executa testes Com a tag LOGIN
 
-### 👀 Executar testes no modo headed (abrirá o navegador)
+## 👀 Executar testes no modo headed (abrirá o navegador)
 ```
 npm run headed
 ```
@@ -98,7 +98,7 @@ npm run debug
 ### 🎯 Depurar um teste por tag com um navegador específico
 ```
 npm run chrome -- --debug --grep @COMPRA
-npm run chrome -- --debug --grep @LOGIN
+npm run firefox -- --debug --grep @LOGIN
 ```
 
 ### 📊 Relatório de testes
