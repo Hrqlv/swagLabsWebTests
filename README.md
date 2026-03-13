@@ -16,7 +16,6 @@ https://www.saucedemo.com/
 
 ## 🛠 Tecnologias Utilizadas
 
-
 ### 🎭 Automação de testes
 ```
 Playwright — Framework utilizado para automação de testes end-to-end (E2E)
@@ -117,3 +116,38 @@ npm run allure
 ```
 https://flax-anglerfish-b42.notion.site/SwagLabs-Plano-de-testes-Gherkin-BDD-3131c05f8d6a8007a789e9674738be64
 ```
+
+## 📂 Estrutura do projeto
+
+swagLabsWebTests
+│
+├── .github/                 # Configurações de CI com GitHub Actions
+│
+├── allure-report/           # Relatório HTML gerado pelo Allure
+├── allure-results/          # Resultados brutos para geração do Allure
+│
+├── mochawesome-report/      # Relatórios gerados pelo Mochawesome
+├── playwright-report/       # Relatório HTML nativo do Playwright
+├── test-results/            # Resultados das execuções de testes
+│
+├── fixtures/
+│   └── data.ts              # Dados utilizados nos testes
+│
+├── support/
+│   └── helpers.ts           # Funções utilitárias reutilizáveis
+│
+├── tests/
+│   ├── pages/               # Page Objects da aplicação
+│   │   ├── base.page.ts
+│   │   ├── login.page.ts
+│   │   └── compra.page.ts
+│   │
+│   └── specs/               # Cenários de testes automatizados
+│       ├── login.spec.ts
+│       └── compra.spec.ts
+│
+├── .env                     # Variáveis de ambiente
+├── .gitignore               # Arquivos ignorados pelo Git
+├── package.json             # Dependências e scripts do projeto
+├── playwright.config.ts     # Configuração do Playwright
+└── README.md                # Documentação do projeto
