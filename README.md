@@ -1,10 +1,23 @@
 # SwagLabs - Automação de testes
 
+## Sobre o projeto
+
+```
+É um projeto de testes e2e (funcional) de um e-commerce fictício, criado especificamente para ser utilizado como ambiente de treinamento e prática para automação de testes de software
+```
+
 ### Clonar o Projeto
 
 ```
 git clone https://github.com/Hrqlv/swagLabsWebTests.git
 ```
+
+### Site do projeto
+
+```
+https://www.saucedemo.com/
+```
+
 ### Instalar dependências
 
 ```
