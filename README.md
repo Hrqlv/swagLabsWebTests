@@ -1,51 +1,56 @@
-# SwagLabs - Automação de testes
+# 📦 SwagLabs - Automação de testes
 
-## Sobre o projeto
-
-```
-É um projeto de testes e2e (funcional) de um e-commerce fictício, criado especificamente para ser utilizado como ambiente de treinamento e prática para automação de testes de software
-```
-
-### Clonar o Projeto
+## 📖 Sobre o projeto
 
 ```
-git clone https://github.com/Hrqlv/swagLabsWebTests.git
+Projeto de testes end-to-end (E2E) para um e-commerce fictício, utilizando Playwright para validar fluxos funcionais da aplicação.
+
+Os testes simulam o comportamento real de um usuário, garantindo que as principais funcionalidades do sistema funcionem corretamente.
 ```
 
-### Site do projeto
+### 🌐 Site do projeto
 
 ```
 https://www.saucedemo.com/
 ```
 
-### Instalar dependências
+# 🚀 Começando
+
+### 📥 Clonar o Projeto
+
+```
+git clone https://github.com/Hrqlv/swagLabsWebTests.git
+```
+
+### 📦 Instalar dependências
 
 ```
 npm install
 ```
 
-### Instalar o Playwright
+### 🎭 Instalar o Playwright
 
 ```
 npx playwright install
 ```
 
-## Como executar os testes
+## ▶️ Executando os testes
 
-### Executando todos os testes
+### Executar todos os testes
 ```
 npm run tests
 ```
-### Executando testes em um navegador específico
+
+### 🌍 Executar testes em um navegador específico
 ```
 npm run chrome
 ```
 #### Opções:
-- chrome
-- webkit
-- firefox
+- 🌐 chrome
+- 🦊 webkit
+- 🧭 firefox
 
-### Executando um teste por tag
+### 🏷️ Executar testes por tag
 ```
 npm run tests -- --grep @LOGIN
 npm run tests -- --grep @COMPRA
@@ -55,25 +60,36 @@ npm run tests -- --grep @COMPRA
 - @COMPRA - Executa testes com a tag COMPRA
 - @LOGIN - Executa testes Com a tag LOGIN
 
-### Executando testes no modo automático (abrirá o navegador)
+### 👀 Executar testes no modo headed (abrirá o navegador)
 ```
 npm run headed
 ```
 
-## Depurando testes
+## 🐞 Depuração de testes
 
-### Depurando todos os testes (abrirá a janela de depuração do Playwright)
+### 🔎 Depurar todos os testes (abrirá a janela de depuração do Playwright)
 ```
 npm run debug
 ```
 
-### Depurando um teste por tag com um navegador específico
+### 🎯 Depurar um teste por tag com um navegador específico
 ```
 npm run chrome -- --debug --grep @COMPRA
 npm run chrome -- --debug --grep @LOGIN
 ```
 
-### Exibindo relatório de testes
+### 📊 Relatório de testes
 ```
 npx playwright show-report
+```
+
+```
+npm run allure
+```
+
+## 📝 Plano de teste no modo BDD - Gherkin
+
+### A escrita dos cenários segue o padrão BDD com Gherkin, priorizando clareza e entendimento do ponto de vista do usuário.
+```
+https://flax-anglerfish-b42.notion.site/SwagLabs-Plano-de-testes-Gherkin-BDD-3131c05f8d6a8007a789e9674738be64
 ```
