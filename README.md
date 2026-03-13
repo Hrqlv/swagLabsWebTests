@@ -3,7 +3,7 @@
 ## 📖 Sobre o projeto
 
 ```
-Projeto de testes end-to-end (E2E) para um e-commerce fictício, utilizando Playwright para validar fluxos funcionais da aplicação.
+Projeto de testes end-to-end (E2E) para um e-commerce fictício, validando fluxos funcionais da aplicação.
 
 Os testes simulam o comportamento real de um usuário, garantindo que as principais funcionalidades do sistema funcionem corretamente.
 ```
@@ -81,7 +81,7 @@ npm run tests -- --grep @COMPRA
 
 #### Exemplos de opções:
 - @COMPRA - Executa testes com a tag COMPRA
-- @LOGIN - Executa testes Com a tag LOGIN
+- @LOGIN - Executa testes com a tag LOGIN
 
 ## 👀 Executar testes no modo headed (abrirá o navegador)
 ```
