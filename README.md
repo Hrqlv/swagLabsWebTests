@@ -14,6 +14,33 @@ Os testes simulam o comportamento real de um usuário, garantindo que as princip
 https://www.saucedemo.com/
 ```
 
+### 🛠 Tecnologias Utilizadas
+
+```
+🎭 Automação de testes
+
+Playwright — Framework utilizado para automação de testes end-to-end (E2E)
+```
+
+```
+💻 Linguagem
+
+TypeScript — Linguagem utilizada para desenvolvimento dos testes
+```
+
+```
+📊 Relatórios de testes
+
+Allure Report — Geração de relatórios detalhados de execução dos testes
+Mochawesome — Registro de logs e relatórios durante a execução dos testes
+```
+
+```
+⚙️ Integração contínua
+
+GitHub Actions — Pipeline de CI para execução automática dos testes
+```
+
 # 🚀 Começando
 
 ### 📥 Clonar o Projeto
@@ -89,7 +116,7 @@ npm run allure
 
 ## 📝 Plano de teste no modo BDD - Gherkin
 
-#### A escrita dos cenários segue o padrão BDD com Gherkin, priorizando clareza e entendimento do ponto de vista do usuário.
+### A escrita dos cenários segue o padrão BDD com Gherkin, priorizando clareza e entendimento do ponto de vista do usuário.
 ```
 https://flax-anglerfish-b42.notion.site/SwagLabs-Plano-de-testes-Gherkin-BDD-3131c05f8d6a8007a789e9674738be64
 ```
