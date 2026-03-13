@@ -119,6 +119,7 @@ https://flax-anglerfish-b42.notion.site/SwagLabs-Plano-de-testes-Gherkin-BDD-313
 
 ## 📂 Estrutura do projeto
 
+```bash
 swagLabsWebTests
 │
 ├── .github/                 # Configurações de CI com GitHub Actions
@@ -151,3 +152,4 @@ swagLabsWebTests
 ├── package.json             # Dependências e scripts do projeto
 ├── playwright.config.ts     # Configuração do Playwright
 └── README.md                # Documentação do projeto
+```
