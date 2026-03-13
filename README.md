@@ -8,32 +8,32 @@ Projeto de testes end-to-end (E2E) para um e-commerce fictício, utilizando Play
 Os testes simulam o comportamento real de um usuário, garantindo que as principais funcionalidades do sistema funcionem corretamente.
 ```
 
-### 🌐 Site do projeto
+## 🌐 Site do projeto
 
 ```
 https://www.saucedemo.com/
 ```
 
-### 🛠 Tecnologias Utilizadas
+## 🛠 Tecnologias Utilizadas
 
 
-#### 🎭 Automação de testes
+### 🎭 Automação de testes
 ```
 Playwright — Framework utilizado para automação de testes end-to-end (E2E)
 ```
 
-#### 💻 Linguagem
+### 💻 Linguagem
 ```
 TypeScript — Linguagem utilizada para desenvolvimento dos testes
 ```
 
-#### 📊 Relatórios de testes
+### 📊 Relatórios de testes
 ```
 Allure Report — Geração de relatórios detalhados de execução dos testes
 Mochawesome — Registro de logs e relatórios durante a execução dos testes
 ```
 
-#### ⚙️ Integração contínua
+### ⚙️ Integração contínua
 ```
 GitHub Actions — Pipeline de CI para execução automática dos testes
 ```
